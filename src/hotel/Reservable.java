@@ -1,5 +1,7 @@
 package hotel;
 
-public class Reservable {
-
+public interface Reservable {
+	boolean isAvailable();
+	void reserve(Customer customer);
+	void cancel();
 }
