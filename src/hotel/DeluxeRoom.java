@@ -8,12 +8,8 @@ public class DeluxeRoom extends Room {
 
     @Override
     public double calculatePrice(int days) {
-        // Lüks oda servisi ve manzarası için %20 ek ücret
-        return (getBasePrice() * days) * 1.20;
+       
+        return (getBasePrice() * days) * 1.50; // +%50
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + " (Type: Deluxe)";
-    }
 }
