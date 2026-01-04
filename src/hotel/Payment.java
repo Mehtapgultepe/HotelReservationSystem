@@ -11,11 +11,11 @@ public class Payment {
 
     public void processPayment() {
        
-        System.out.println("\n--- PAYMENT RECEIPT ---");
+        System.out.println("\n**PAYMENT RECEIPT**");
         System.out.println("Amount: " + amount + " TL");
         System.out.println("Method: " + paymentMethod);
         System.out.println("Status: PAID SUCCESSFUL");
-        System.out.println("-----------------------\n");
+
     }
 
 
