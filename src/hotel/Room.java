@@ -46,6 +46,6 @@ public abstract class Room implements Reservable {
     @Override
     public String toString() {
         String status = isReserved ? "Full (Customer: " + currentCustomer.getName() + ")" : "Empty";
-        return "Room #" + roomNumber + " [" + status + "]"; 
+        return "Room -" + roomNumber + " [" + status + "]"; 
     }
 }
