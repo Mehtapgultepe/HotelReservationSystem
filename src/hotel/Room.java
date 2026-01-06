@@ -1,4 +1,8 @@
 package hotel;
+/**
+ * Oteldeki odaların temel özelliklerini ve davranışlarını tanımlayan soyut sınıftır.
+ * Bu sınıf, farklı oda tipleri (Standard, Deluxe) için bir temel oluşturur.
+ */
 
 
 public abstract class Room implements Reservable {
@@ -16,27 +20,23 @@ public abstract class Room implements Reservable {
     public abstract double calculatePrice(int days);
 
     
-    @Override
+ 
+
     public boolean isAvailable() {
         return !isReserved;
     }
 
     @Override
     public void reserve(Customer customer) {
-        if (!isReserved) {
-            this.isReserved = true;
-            this.currentCustomer = customer;
-            System.out.println("Room " + roomNumber + " reserved for " + customer.getName());
-        } else {
-            System.out.println("Room " + roomNumber + " is already full!");
-        }
+    	this.isReserved = true;
+        this.currentCustomer = customer;
     }
 
     @Override
     public void cancel() {
         this.isReserved = false;
         this.currentCustomer = null;
-        System.out.println("Room " + roomNumber + " is now free.");
+        //System.out.println("Room " + roomNumber + " is now free.");
     }
 
     public int getRoomNumber() { return roomNumber; }

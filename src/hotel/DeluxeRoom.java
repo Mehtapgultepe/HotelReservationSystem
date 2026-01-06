@@ -1,4 +1,8 @@
 package hotel;
+/**
+ * Deluxe oda tipini temsil eden ve Room sınıfından türetilen sınıftır.
+ * Odaya özgü fiyatlandırma hesaplamalarını içerir.
+ */
 
 public class DeluxeRoom extends Room {
 

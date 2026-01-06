@@ -2,11 +2,14 @@ package hotel;
 public class Customer {
     private String name;
     private String number;
-    private int id;
+    private String custid;
+    
 
-    public Customer(String name, String number) {
+    public Customer(String name, String number, String custid) {
         this.setName(name);
         this.setNumber(number);
+        this.setCustid(custid);
+        
     }
 
 	public String getNumber() {
@@ -25,12 +28,20 @@ public class Customer {
 		this.name = name;
 	}
 
-	public int getId() {
-		return id;
+
+
+	
+	public String getCustid() {
+		return custid;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setCustid(String custid) {
+		this.custid = custid;
 	}
-
+	
+	public void displayInfo() {
+		System.out.println("tc no" + custid + "isim " + name);
+	}
+	
+	
 }
